@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+client_data/
+client1_data/
+client2_data/
+*.pth
+models/*.pth
+.DS_Store
