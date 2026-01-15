@@ -69,6 +69,3 @@ Here is a detailed breakdown of the project files and their specific roles:
     python fl_client.py --data client1_data --id 1
     python fl_client.py --data client2_data --id 2
     ```
-
-
-make it better and specify which file does what
