@@ -16,6 +16,6 @@ def load_xray_model(device, weights_path=None):
             # strict=False allows loading slightly different architectures safely
             model.load_state_dict(torch.load(weights_path), strict=False)
         except Exception as e:
-            print(f"⚠️ Warning: Could not load weights from {weights_path}. Starting fresh. ({e})")
+            print(f"Warning: Could not load weights from {weights_path}. Starting fresh. ({e})")
     
     return model.to(device)
