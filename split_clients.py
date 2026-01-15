@@ -12,11 +12,11 @@ CLIENTS = ["client1_data", "client2_data"]
 def split_data_simply():
     # 1. Check if source data exists
     if not os.path.exists(SOURCE_FOLDER):
-        print(f"❌ Error: I can't find the folder '{SOURCE_FOLDER}'")
+        print(f"Error: I can't find the folder '{SOURCE_FOLDER}'")
         print("Make sure you are running this script in the same folder as 'client_data'")
         return
 
-    print("✅ Found data. Splitting into Client 1 and Client 2...")
+    print("Found data. Splitting into Client 1 and Client 2...")
 
     # 2. Process 'train' and 'val' folders
     for split_type in ["train", "val"]:
@@ -55,7 +55,7 @@ def split_data_simply():
             
             print(f"   Splitting {class_name} ({split_type}): {len(images)} images copied.")
 
-    print("\n🎉 Done! You now have 'client1_data' and 'client2_data'.")
+    print("\n Done! You now have 'client1_data' and 'client2_data'.")
 
 if __name__ == "__main__":
     split_data_simply()
