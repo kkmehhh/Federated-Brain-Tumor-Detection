@@ -17,7 +17,7 @@ def get_loaders(data_root, batch_size=10):
     val_dir = os.path.join(data_root, "val")
 
     if not os.path.exists(train_dir):
-        print(f"❌ Error: {train_dir} does not exist!")
+        print(f" Error: {train_dir} does not exist!")
         sys.exit(1)
 
     train_ds = datasets.ImageFolder(train_dir, transform=transform)
